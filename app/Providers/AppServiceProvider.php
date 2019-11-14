@@ -14,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind('help', function(){
+            return new \App\Library\Help;
+        });
     }
 
     /**
@@ -24,6 +26,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // $this->configCache();
+        // $this->routesCache();
         Schema::defaultStringLength(191);
+    }
+
+    private function configCache()
+    {
+        // load_config_into_cache();
+    }
+
+    private function routesCache()
+    {
+        // load_routes_into_cache();
     }
 }
