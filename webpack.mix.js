@@ -34,11 +34,12 @@ mix.js('resources/js/app.js', 'public/js')
 	   	'resources/material-dashboard/js/arrive.min.js',
 	   	'resources/material-dashboard/js/chartist.min.js',
 	   	'resources/material-dashboard/js/bootstrap-notify.js',
+	   	'resources/material-dashboard/js/font-awesome.js',
 	   	'resources/material-dashboard/js/material-dashboard.js'
    	], 'public/js/material-dashboard.js')
    .combine([
-	   	'resources/material-dashboard/css/font-awesome.min.css',
+	   	// 'resources/material-dashboard/css/font-awesome.min.css',
 	   	'resources/material-dashboard/css/material-dashboard-icon.css',
-	   	'resources/material-dashboard/css/material-dashboard.css',
+	   	'resources/material-dashboard/css/material-dashboard.min.css',
 	   	'resources/material-dashboard/demo/demo.css'
    	], 'public/css/material-dashboard.css');
