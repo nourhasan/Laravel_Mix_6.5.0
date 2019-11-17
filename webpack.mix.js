@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
+   .sass('resources/material-dashboard/font-awesome-4.7.0/scss/font-awesome.scss', 'public/css')
    .combine([
 	   	'resources/material-dashboard/js/jquery.min.js',
 	   	'resources/material-dashboard/js/popper.min.js',
@@ -34,12 +35,10 @@ mix.js('resources/js/app.js', 'public/js')
 	   	'resources/material-dashboard/js/arrive.min.js',
 	   	'resources/material-dashboard/js/chartist.min.js',
 	   	'resources/material-dashboard/js/bootstrap-notify.js',
-	   	'resources/material-dashboard/js/font-awesome.js',
 	   	'resources/material-dashboard/js/material-dashboard.js'
    	], 'public/js/material-dashboard.js')
    .combine([
-	   	// 'resources/material-dashboard/css/font-awesome.min.css',
 	   	'resources/material-dashboard/css/material-dashboard-icon.css',
-	   	'resources/material-dashboard/css/material-dashboard.min.css',
+	   	'resources/material-dashboard/css/material-dashboard.css',
 	   	'resources/material-dashboard/demo/demo.css'
    	], 'public/css/material-dashboard.css');

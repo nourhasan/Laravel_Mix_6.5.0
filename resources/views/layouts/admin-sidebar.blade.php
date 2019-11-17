@@ -5,12 +5,6 @@
     </a>
 </li>
 <li class="nav-item">
-    <a class="nav-link" href="{{ url('admin/role') }}">
-        <i class="material-icons">dashboard</i>
-        <p>Roles</p>
-    </a>
-</li>
-<li class="nav-item">
     <a class="nav-link" href="./user.html">
         <i class="material-icons">person</i>
         <p>User Profile</p>
