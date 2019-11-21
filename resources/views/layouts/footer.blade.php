@@ -26,11 +26,9 @@
         </nav>
         <div class="copyright float-right">
             &copy;
-            <script>
-            document.write(new Date().getFullYear())
-
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+            {{ date("Y") }},
+            Material Dashboard</i> by
+            <a href="https://github.com/nourhasan" target="_blank">Nour Hasan</a>
         </div>
     </div>
 </footer>
